@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon May  8 10:33:10 2023
+# Process ID: 796
+# Current directory: D:/Parscoders/400861_VHDL_RS232_BuubleSort/Vivado/Main020217
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16116 D:\Parscoders\400861_VHDL_RS232_BuubleSort\Vivado\Main020217\Main020217.xpr
+# Log file: D:/Parscoders/400861_VHDL_RS232_BuubleSort/Vivado/Main020217/vivado.log
+# Journal file: D:/Parscoders/400861_VHDL_RS232_BuubleSort/Vivado/Main020217\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Parscoders/400861_VHDL_RS232_BuubleSort/Vivado/Main020217/Main020217.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
