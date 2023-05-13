@@ -24,7 +24,7 @@ architecture Behavioral of Main is
 			Busy,TXD: out	std_logic);
 	end component;
 	------------------------------------------
-	type my_type is (St_Idle,St_Start,St_Rec0,St_Rec1,St_Rec2,St_Proc0,St_Proc1,St_Proc2,St_Send0,St_Send1,St_Send2,St_Send3,St_Return);
+	type my_type is (St_Idle,St_Start,St_Rec0,St_Rec1,St_Rec2,St_Proc0,St_Proc1,St_Send0,St_Send1,St_Send2,St_Send3,St_Return);
 	signal	State:	my_type:=St_Idle;
 	------------------------------------------
 	constant   Freq:	integer:=100000000;
@@ -34,7 +34,7 @@ architecture Behavioral of Main is
 	type	My_Array	is array (0 to 9) of std_logic_vector(7 downto 0);
 	signal	Mem:    My_Array;
 	signal	Cnt0,Cnt1:	integer;
-	signal	Number:	integer range 0 to 7;
+	signal	Number:	integer range 0 to 9;
 	------------------------------------------
 	signal	RX_Rst,RX_Start,RX_Error,RX_Busy,Rx_Rdy,Tx_Rst,Tx_Start,TX_Busy,Swap:	std_logic;
 	signal	Rx_Data,Tx_Data:	std_logic_vector(7 downto 0);
@@ -60,7 +60,7 @@ begin
 					when	St_Idle	=>
 						Rx_Rst<='1';    Rx_Start<='0';
 						Tx_Rst<='1';    Tx_Start<='0';  Tx_Data<="00000000";	LED<="000";
-						State<=St_Start;
+						State<=St_Start; Cnt0<=0;	Cnt1<=0;	Swap<='0';
 					when	St_Start	=>
 						Rx_Rst<='0';	Rx_Start<='1';  State<=St_Rec0;	LED<="001";
 					when	St_Rec0	=>
@@ -90,7 +90,7 @@ begin
 						if (Swap='0')	then
 							State<=St_Send0;
 						else
-							if (Cnt1=9)	then	Cnt1<=0;	State<=St_Proc2;
+							if (Cnt1=9)	then	Cnt1<=0;	State<=St_Send0;
 							else					Cnt1<=Cnt1+1;	State<=St_Proc0;
 							end if;
 						end if;

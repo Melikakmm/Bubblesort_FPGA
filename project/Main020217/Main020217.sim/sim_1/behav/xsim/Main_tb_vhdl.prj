@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Main020217.srcs/sources_1/imports/Main020217/Receiver.vhd" \
+"../../../../Main020217.srcs/sources_1/imports/Main020217/Transmitter.vhd" \
+"../../../../Main020217.srcs/sources_1/new/Main.vhd" \
+"../../../../Main020217.srcs/sources_1/imports/Main020217/Main_tb.vhd" \
+
+# Do not sort compile order
+nosort

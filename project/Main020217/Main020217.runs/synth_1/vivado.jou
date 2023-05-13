@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2019.1 (64-bit)
-# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
-# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon May  8 13:41:47 2023
-# Process ID: 11412
-# Current directory: D:/Parscoders/400861_VHDL_RS232_BuubleSort/Vivado/Main020217/Main020217.runs/synth_1
-# Command line: vivado.exe -log Main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
-# Log file: D:/Parscoders/400861_VHDL_RS232_BuubleSort/Vivado/Main020217/Main020217.runs/synth_1/Main.vds
-# Journal file: D:/Parscoders/400861_VHDL_RS232_BuubleSort/Vivado/Main020217/Main020217.runs/synth_1\vivado.jou
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat May 13 20:29:53 2023
+# Process ID: 143850
+# Current directory: /home/melika/GitHub/Bubblesort_FPGA/project/Main020217/Main020217.runs/synth_1
+# Command line: vivado -log Main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+# Log file: /home/melika/GitHub/Bubblesort_FPGA/project/Main020217/Main020217.runs/synth_1/Main.vds
+# Journal file: /home/melika/GitHub/Bubblesort_FPGA/project/Main020217/Main020217.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source Main.tcl -notrace

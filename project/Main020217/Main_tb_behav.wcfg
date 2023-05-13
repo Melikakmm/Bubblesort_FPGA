@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Main_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Main_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="6.070001 us"></ZoomEndTime>
+      <Cursor1Time time="1.000000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="221"></NameColumnWidth>
+      <ValueColumnWidth column_width="99"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject type="logic" fp_name="/Main_tb/Clk">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Main_tb/Rst">
+      <obj_property name="ElementShortName">Rst</obj_property>
+      <obj_property name="ObjectShortName">Rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Main_tb/RXD">
+      <obj_property name="ElementShortName">RXD</obj_property>
+      <obj_property name="ObjectShortName">RXD</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Main_tb/TXD">
+      <obj_property name="ElementShortName">TXD</obj_property>
+      <obj_property name="ObjectShortName">TXD</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Main_tb/LED">
+      <obj_property name="ElementShortName">LED[2:0]</obj_property>
+      <obj_property name="ObjectShortName">LED[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Main_tb/RX_Start">
+      <obj_property name="ElementShortName">RX_Start</obj_property>
+      <obj_property name="ObjectShortName">RX_Start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Main_tb/RX_Error">
+      <obj_property name="ElementShortName">RX_Error</obj_property>
+      <obj_property name="ObjectShortName">RX_Error</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Main_tb/RX_Busy">
+      <obj_property name="ElementShortName">RX_Busy</obj_property>
+      <obj_property name="ObjectShortName">RX_Busy</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Main_tb/Rx_Rdy">
+      <obj_property name="ElementShortName">Rx_Rdy</obj_property>
+      <obj_property name="ObjectShortName">Rx_Rdy</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Main_tb/Tx_Start">
+      <obj_property name="ElementShortName">Tx_Start</obj_property>
+      <obj_property name="ObjectShortName">Tx_Start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Main_tb/TX_Busy">
+      <obj_property name="ElementShortName">TX_Busy</obj_property>
+      <obj_property name="ObjectShortName">TX_Busy</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Main_tb/Rx_Data">
+      <obj_property name="ElementShortName">Rx_Data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Rx_Data[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Main_tb/Tx_Data">
+      <obj_property name="ElementShortName">Tx_Data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Tx_Data[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/Main_tb/Clk_period">
+      <obj_property name="ElementShortName">Clk_period</obj_property>
+      <obj_property name="ObjectShortName">Clk_period</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/Main_tb/Freq">
+      <obj_property name="ElementShortName">Freq</obj_property>
+      <obj_property name="ObjectShortName">Freq</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/Main_tb/Baud">
+      <obj_property name="ElementShortName">Baud</obj_property>
+      <obj_property name="ObjectShortName">Baud</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Main_tb/Parity">
+      <obj_property name="ElementShortName">Parity[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Parity[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Main_tb/uut/Mem">
+      <obj_property name="ElementShortName">Mem[0:9][7:0]</obj_property>
+      <obj_property name="ObjectShortName">Mem[0:9][7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

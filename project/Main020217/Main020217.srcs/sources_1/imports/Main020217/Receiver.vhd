@@ -82,7 +82,7 @@ begin
 						when	"01"	=>	if (Parity_Check='0')	then	 Dout<=Data;	Rdy<='1';	else	Error<='1';	end if;
 						when	others	=>	Dout<=Data;	Rdy<='1';
 					end case;
-					if (Start='0')	then	State<=St_Start;	end if;
+					if (Start='0')	then	State<=St_Idle;	end if;
 				when	others	=>
 					State<=St_Idle;
 				end case;

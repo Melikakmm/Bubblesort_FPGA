@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat May 13 20:32:26 2023
+# Process ID: 164392
+# Current directory: /home/melika/GitHub/Bubblesort_FPGA/project/Main020217/Main020217.runs/impl_1
+# Command line: vivado -log Main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Main.tcl -notrace
+# Log file: /home/melika/GitHub/Bubblesort_FPGA/project/Main020217/Main020217.runs/impl_1/Main.vdi
+# Journal file: /home/melika/GitHub/Bubblesort_FPGA/project/Main020217/Main020217.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Main.tcl -notrace
