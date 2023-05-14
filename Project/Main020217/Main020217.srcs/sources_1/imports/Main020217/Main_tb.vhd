@@ -75,8 +75,8 @@ BEGIN
 		for ii in 0 to 9 loop
 			readline(file1,Line1); read(Line1,Data1); Tx_Data<=std_logic_vector(to_unsigned(Data1,8));
 			Tx_Start<='1';	wait for Clk_period*1;
-			while Tx_Busy='0'	loop	wait for Clk_period*1;	end loop;
-			while Tx_Busy='1'	loop	wait for Clk_period*1;	end loop;
+			while Tx_Busy='0'	loop	wait for Clk_period*1;	end loop; --to make sure the TX is ready to transmit the data.
+			while Tx_Busy='1'	loop	wait for Clk_period*1;	end loop; -- the waiting is executed, as long as the statement(TX_Busy = '1') is true to a avoid data confusion.
 			Tx_Start<='0';	wait for Clk_period*2;
 		end loop;
 		---------------------------------------
